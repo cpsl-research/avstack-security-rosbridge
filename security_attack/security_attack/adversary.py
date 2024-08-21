@@ -137,6 +137,10 @@ class AdversaryNode(Node):
 
             # run adversary to manipulate objects
             objects = DetectionBridge.detectionarray_to_avstack(msg)
+            # HACK: manually set the reference frame
+            for obj in objects:
+                obj.box.position.reference = reference_agent
+                obj.box.attitude.reference = reference_agent
             objects = self.model(
                 objects=objects,
                 reference_agent=reference_agent,
