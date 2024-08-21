@@ -4,8 +4,12 @@
   <name>security_attack</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="spencer.hallyburton@duke.edu">spencer</maintainer>
+  <maintainer email="20426598+roshambo919@users.noreply.github.com">spencer</maintainer>
   <license>TODO: License declaration</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>avstack_bridge</exec_depend>
+  <exec_depend>avstack_msgs</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

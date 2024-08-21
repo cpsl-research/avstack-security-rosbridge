@@ -1,0 +1,19 @@
+/**:  # we need to use this because of the scripting of adv namespaces
+  ros__parameters:
+    # initialization
+    adv_dt_init: 1.0
+    adv_dt_reset: 10.0
+
+    # propagation
+    propagation: TrajectoryPropagator
+    markov_propagator_v_sigma: 10.0
+    markov_propagator_dv_sigma: 1.0
+    trajectory_propagator_dx: 20.0
+    trajectory_propagator_dy: 20.0
+    trajectory_propagator_dz: 0.0
+    trajectory_propagator_dt: 10.0
+
+    # manifest
+    manifest_fp_poisson: 5.0
+    manifest_fn_fraction: 0.20
+    manifest_tr_fraction: 0.0
