@@ -4,7 +4,7 @@ from glob import glob
 from setuptools import find_packages, setup
 
 
-package_name = "security_attack"
+package_name = "avsec_bridge"
 
 setup(
     name=package_name,
@@ -27,8 +27,8 @@ setup(
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "coordinator = security_attack.coordinator:main",
-            "adversary = security_attack.adversary:main",
+            "coordinator = security_bridge.coordinator:main",
+            "adversary = security_bridge.adversary:main",
             "agent_detection_sample = samples.AgentDetectionSample:main",
         ],
     },

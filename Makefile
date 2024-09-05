@@ -1,7 +1,7 @@
 NAME := security-ros
 INSTALL_STAMP := .install.stamp
 POETRY := $(shell command -v poetry 2> /dev/null)
-PYFOLDERS := security_attack security_defend
+PYFOLDERS := avsec_bridge
 .DEFAULT_GOAL := help
 
 .PHONY: help

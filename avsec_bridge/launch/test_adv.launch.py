@@ -11,7 +11,7 @@ def generate_launch_description():
     )
     rviz_param = PathJoinSubstitution(
         [
-            get_package_share_directory("security_attack"),
+            get_package_share_directory("security_bridge"),
             "config",
             LaunchConfiguration("rviz_config"),
         ]
@@ -19,14 +19,14 @@ def generate_launch_description():
 
     adv_config = PathJoinSubstitution(
         [
-            get_package_share_directory("security_attack"),
+            get_package_share_directory("security_bridge"),
             "config",
             "adversary.yaml",
         ]
     )
 
     adv_node = Node(
-        package="security_attack",
+        package="security_bridge",
         executable="adversary",
         namespace="adversary0",
         name="adversary0",
@@ -36,7 +36,7 @@ def generate_launch_description():
     )
 
     agent_pub = Node(
-        package="security_attack",
+        package="security_bridge",
         executable="agent_detection_sample",
         namespace="agent0",
         name="agent_detection_sample",
